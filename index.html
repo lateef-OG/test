@@ -208,16 +208,19 @@ box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75)
 		}	
 
 		@media only screen and (max-width: 440px){
-			body{
-			padding: 4% 0%;
+			body, html{
+			padding: 0;
+			margin: 0;
+			top: 0;
 			/*background-color:#606060;*/
 			
 		}
 			nav{
 				padding: 2% 0;
+				display: none;
 			}
 			#nav-image {
-			height: 20px;
+			display: none;
 		}
 		#video-name{
 			font-size: 12px;
@@ -228,10 +231,11 @@ box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75)
 				#player-section{
 				width: 100%;
 				left: 0;
-				height: 60%;
+				/*height: 60%;*/
 				position: fixed;
 				padding: auto;
-				margin-top: 15px;
+				/*margin-top*/
+				top: 0;
 				
 			}
 			#player{
@@ -261,7 +265,7 @@ box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75)
 		}
 		#spacer{
 			margin-top: 7%;
-			height: 33vh;
+			height: 25vh;
 		}
 		#caption{
 			-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
@@ -299,7 +303,7 @@ box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
 	<main>
 		<section id="player-section">
 			<div id="video-player">
-				<video id="player" controls type='video/mp4'>
+				<video id="player" controls= "true">
 					<source src="http://res.cloudinary.com/dmz79kgf0/video/upload/q_71/v1511391630/Ed_ohshlf.mp4" type="video/mp4">
 				</video>
 				<div id="caption" >
