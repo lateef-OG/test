@@ -145,7 +145,7 @@ footer{
 	padding: 0.1% 0;
 }
 
-@media only screen and (max-width: 770px){
+/*@media only screen and (max-width: 770px){
 	body{
 		margin: 0;
 		padding: 0;
@@ -184,9 +184,9 @@ footer{
 	    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
 		box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
 	}
-}	
+}	*/
 
-@media only screen and (max-width: 440px){
+@media only screen and (max-width: 770px){
 	body, html{
 		padding: 0;
 		margin: 0;
@@ -210,7 +210,7 @@ footer{
 	#player-section{
 		width: 100%;
 		left: 0;
-		/*height: 60%;*/
+		z-index: 1;
 		position: fixed;
 		padding: 0;
 		margin-top: 0;
