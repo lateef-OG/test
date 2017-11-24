@@ -12,6 +12,7 @@
 			/*background-color:#606060;*/
 			font-family: 'Open Sans', sans-serif;
 			height: 100%;
+			width: 100%;
 		}
 
 		body::-webkit-scrollbar-track{
@@ -248,13 +249,17 @@ box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75)
 			top:0;
 			}
 			#playlist-section{
-			width: 100vw;
+			width: 100%;
 			margin-top: 50%;
 			left: 0
 			margin-bottom: 50px;
-			display: block;
+			/*display: block;*/
 			position: absolute;
-			
+			box-sizing: border-box;
+		}
+		#show{
+			/*padding: 10%;*/
+			width: 100vw;
 		}
 		.playlist{
 			margin-left: 0;
@@ -267,7 +272,7 @@ box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75)
 		}
 		#spacer{
 			margin-top: 7%;
-			height: 25vh;
+			height: 20vh;
 		}
 		#caption{
 			-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
@@ -319,11 +324,13 @@ box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
 		</section>
 		<section id = "spacer">	</section>
 		<section id="playlist-section">
-			<section id="show">	
+			<div id="show">	
 
-			</section>
+			</div>
 		</section>
-		
+		<div>
+			<p>VIVA XD  &copy; 2017</p>
+		</div>
 	</main>
 	<footer>
 		<p>VIVA XD  &copy; 2017</p>
