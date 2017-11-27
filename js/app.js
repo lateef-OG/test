@@ -31,6 +31,8 @@
 		fallback[0].src = videos[index].src;
 		video_name = videos[index].name;
 		document.getElementById("video-name").innerHTML = video_name;
+		var playIcon = document.getElementById("play-icon");
+		playIcon.src = "assets/pause.png";
 		video.load();
 		video.play();
 	}
