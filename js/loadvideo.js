@@ -13,7 +13,7 @@ var videos = [];
 	var div = "";
 
 	for(var i = 0; i < videos.length; i++){
-		div += "<div class='playlist' onclick='loadVideo("+ i +");' ontouchend='touchEnd("+ i +");'>";
+		div += "<div class='playlist' onclick='loadVideo("+ i +");'>";
 		div += "<video src="+ videos[i].src +" poster="+ videos[i].poster +"></video>";
 		div += "<div class ='playlist-name'>";
 		div += "<h4>"+ videos[i].name +"</h4>";
@@ -37,16 +37,4 @@ var videos = [];
 		video.play();
 	}
 
-	function touchEnd(index) {
-  		video = document.getElementById('player');
-		source = document.querySelectorAll("#player source");
-		source[0].src = videos[index].src;
-		fallback = document.querySelectorAll("embed");
-		fallback[0].src = videos[index].src;
-		video_name = videos[index].name;
-		document.getElementById("video-name").innerHTML = video_name;
-		var playIcon = document.getElementById("play-icon");
-		playIcon.src = "assets/pause.png";
-		video.load();
-		video.play();
-	}
+	
