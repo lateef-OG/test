@@ -195,6 +195,7 @@ button:focus{
 	top: 0;
 	width: 100%;
 	display: none;
+
 }
 
 #mute-icon{
@@ -209,6 +210,9 @@ button:focus{
 	position: relative;
 	margin: auto;
 	margin-left: 5px;
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
 }
 
 #full-screen{
@@ -235,6 +239,9 @@ button:focus{
   background-color: #D1D3D4;
   overflow: hidden;
   position: relative;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
 }
 
 #fill
