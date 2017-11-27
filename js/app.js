@@ -1,3 +1,5 @@
+window.onload = function() {
+
 	var videos = [];
 
 	videos.push({name:'Ed Sheeran - Shape of You', src:'http://res.cloudinary.com/dmz79kgf0/video/upload/q_71/v1511391630/Ed_ohshlf.mp4', poster:'http://res.cloudinary.com/dmz79kgf0/image/upload/v1511484161/shape-of-you-1_wuvdew.jpg'}); 
@@ -23,22 +25,6 @@
 
 	document.getElementById("show").innerHTML = div;
 
-	function loadVideo(index) {
-		video = document.getElementById('player');
-		source = document.querySelectorAll("#player source");
-		source[0].src = videos[index].src;
-		fallback = document.querySelectorAll("embed");
-		fallback[0].src = videos[index].src;
-		video_name = videos[index].name;
-		document.getElementById("video-name").innerHTML = video_name;
-		var playIcon = document.getElementById("play-icon");
-		playIcon.src = "assets/pause.png";
-		video.load();
-		video.play();
-	}
-
-
-window.onload = function() {
 	// Video
 	var video = document.getElementById("player");
 	video.controls = false;
@@ -55,6 +41,34 @@ window.onload = function() {
 	var progressBar = document.getElementById("progress-bar");
 
 	var videoControls = document.getElementById("video-controls");
+	var playlist = document.getElementByClassName("playlist")
+
+	function loadVideo(index) {
+		//video = document.getElementById('player');
+		source = document.querySelectorAll("#player source");
+		source[0].src = videos[index].src;
+		fallback = document.querySelectorAll("embed");
+		fallback[0].src = videos[index].src;
+		video_name = videos[index].name;
+		document.getElementById("video-name").innerHTML = video_name;
+		var playIcon = document.getElementById("play-icon");
+		playIcon.src = "assets/pause.png";
+		video.load();
+		video.play();
+	}
+
+	playlist.addEventListener("click", function(){
+		source = document.querySelectorAll("#player source");
+		source[0].src = videos[index].src;
+		fallback = document.querySelectorAll("embed");
+		fallback[0].src = videos[index].src;
+		video_name = videos[index].name;
+		document.getElementById("video-name").innerHTML = video_name;
+		var playIcon = document.getElementById("play-icon");
+		playIcon.src = "assets/pause.png";
+		video.load();
+		video.play();
+	});
 
 
 	// Event listener for the play/pause button
