@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 body{
 	padding: 4% 3%;
-	/*background-color:#606060;*/
 	font-family: 'Open Sans', sans-serif;
 	height: 100%;
-	/*width: 100%;*/
-	/*overflow-x: hidden;*/
 }
 
 body::-webkit-scrollbar-track{
@@ -26,7 +23,6 @@ body::-webkit-scrollbar-thumb{
 }
 
 nav{
-	/*max-height:50px;*/
 	width: 100%;
 	right: 0;
 	top: 0;
@@ -103,7 +99,6 @@ nav{
 	color: #FEFEFE;
 	cursor: pointer;
 	height: 100px;
-	/* align-items: center; */
 	margin-bottom: 1%;
 }
 
@@ -147,7 +142,6 @@ footer{
 
 #video-container {
 	width: 100%;
-	/*height: 365px;*/
 	position: relative;
 }
 
@@ -225,7 +219,6 @@ box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
 #bottom-right{
 	width: 40%;
 	float: right;
-	/*position: absolute;*/
 }
 
 
@@ -349,7 +342,6 @@ input[type=range]:focus::-ms-fill-upper {
 		padding: 0;
 		margin: 0;
 		top: 0;
-		/*overflow-x: hidden;*/
 		background-color:#D1D3D4;
 	}
 	nav{
@@ -368,11 +360,12 @@ input[type=range]:focus::-ms-fill-upper {
 	#player-section{
 		width: 100%;
 		left: 0;
-		z-index: 1;
+		z-index: 2;
 		position: fixed;
 		padding: 0;
 		margin-top: 0;
 		top: 0;
+		height: 45vh;
 	}
 	#player{
 		margin-bottom: 0;
@@ -389,20 +382,18 @@ input[type=range]:focus::-ms-fill-upper {
 		left: 0;
 		padding: 0;
 		display: block;
+		z-index: 1;
 		margin-bottom: 50px;
-		/*display: block;*/
 		position: absolute;
 		box-sizing: border-box;
 		overflow-x: hidden;
 	}
 	#show{
-		/*padding: 0 3%;*/
 		width: 100vw;
 		margin-bottom: 50px;
 	}
 	.playlist{
 		margin-left: 0;
-		/*width: 100%;*/
 	}
 	.playlist-name{
 		font-size: 15px;
@@ -411,7 +402,6 @@ input[type=range]:focus::-ms-fill-upper {
 		width: 30%;
 	}
 	#spacer{
-		/*margin-top: 7%;*/
 		height: 17vh;
 	}
 	#caption{
@@ -420,6 +410,7 @@ input[type=range]:focus::-ms-fill-upper {
 		box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
 	}
 	footer{
+		z-index: 2;
 		margin-top: 50px;
 	}
 	footer p{
@@ -428,8 +419,12 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 @media only screen and (max-width: 440px){
+	#bottom-right{
+		width: 70%;
+	}
 	#volume-bar {
-		display: none;
+		/*display: none;*/
+		width: 50%;
 	}
 	#video-controls {
 		height: 20%;
