@@ -73,6 +73,11 @@ window.onload = function() {
 		}
 	});
 
+	if (video.paused == true) {
+			playIcon.src = "assets/play.png";
+		} else {
+			playIcon.src = "assets/pause.png";
+		}
 
 
 
