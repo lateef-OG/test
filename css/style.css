@@ -418,7 +418,7 @@ input[type=range]:focus::-ms-fill-upper {
 	}
 }
 
-@media only screen and (max-width: 440px){
+@media only screen and (max-width: 350px){
 	#bottom-right{
 		width: 40%;
 	}
