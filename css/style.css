@@ -423,10 +423,10 @@ input[type=range]:focus::-ms-fill-upper {
 		width: 80%;
 	}
 	#volume-bar {
-		/*display: none;*/
-		width: 50%;
+		display: none;
 	}
 	#video-controls {
+		padding: 3px;
 		height: 20%;
 	}
 }
